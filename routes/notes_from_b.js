@@ -4,9 +4,8 @@ const cors = require('cors'); // corsミドルウェアを追加
 require('dotenv').config();
 
 // 接続情報を設定
-const { MongoClient } = require("mongodb");
-const uri = process.env.MONGODB_URI;
-const client = new MongoClient(uri);
+cconst { MongoClient } = require("mongodb");
+const uri = "mongodb+srv://takeshi_admin:kanayama01@cluster202601.azrvfsr.mongodb.net/?appName=Cluster202601";
 
 // corsミドルウェアを使用
 router.use(cors());
